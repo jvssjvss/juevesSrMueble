@@ -1,0 +1,23 @@
+/*Layout*/
+
+.container{
+    display: grid;
+    grid-column: 1fr;
+    grid-row: 1fr 1fr 1fr;
+    grid-area: "header"
+    "main"
+    "footer";
+}
+header{
+    grid-area: "header";
+
+}
+main{
+    grid-area: "main";
+    padding-left: 0.44vw;
+    padding-right: 0.44vw;
+}
+footer{
+    grid-area: "footer";
+    background-color: $cBlack;
+}
