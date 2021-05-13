@@ -2,34 +2,97 @@
 body{
     font-size: $mainFont;
     font: $fontType;
+
 }
 .container{
+    width: 100vw;
     height: 420vh;
     display: grid;
-    grid-column: 1fr;
-    grid-row: 25.6% auto 18%;
-    grid-area: "header"
-    "main"
-    "footer";
+    grid-template-columns: 1fr;
+    grid-template-rows: minmax(fit-content, 60vh) auto fr;
 }
-header,main, footer{
+
+img{
+    display: block;
+    padding-bottom: 10px;
+    box-sizing: border-box;
+}
+header,main, .main__servicios, .main__form{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 header{
-    grid-area: "header";
+
     border-bottom: 0.5vh $cPink solid;
 
 }
 main{
-    grid-area: "main";
-    padding-left: 16px;
-    padding-right: 16px;
+
+    padding-left: 4vw;
+    padding-right: 4vw;
+}
+
+header, main footer{
+    grid-area: auto;
+}
+
+.main__quienesSomos{
+    display: grid;
+    grid-template-columns: 1fr 2fr min-content;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+.main__quienesSomos__title{
+    grid-row: 1/2;
+    grid-column: 2/3;
+    align-self: center;
+}
+.main__quienesSomos__fecha1{
+    grid-row: 2/3;
+    grid-column: 1/2;
+}
+.main__quienesSomos__fecha2{
+    grid-row: 3/4;
+    grid-column: 1/2;
+
+}
+.main__quienesSomos__texto1{
+    grid-row: 2/3;
+    grid-column: 2/3;
+
+
+}
+.main__quienesSomos__texto2{
+    grid-row: 3/4;
+    grid-column: 2/3;
+
+}
+.main__quienesSomos__img{
+    grid-row: 4/5;
+    grid-column: 1/3;
+    justify-self: center;
 }
 footer{
-    grid-area: "footer";
+
     background-color: $cBlack;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 1fr 3fr 1fr 3fr 1fr;
 
 
+}
+.footer__redesSociales{
+    grid-column: 2/3;
+    grid-row: 4/5;
+
+}
+.footer__redesSociales__title{
+    grid-column: 1/2;
+    grid-row: 4/5;
+
+}
+.footer__copy{
+    grid-row: 5/6;
+    grid-column: 1/3;
+    justify-self: center;
 }
