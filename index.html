@@ -10,14 +10,15 @@
 <body>
     <section class="container">
     <header>
-        <!--Nav-->
-        <h1>Sr. Mueble</h1>
+
+        <h1 class="header__title">Sr. Mueble</h1>
 
         <!--Banner que vaya cambiando segundo el servicio a potenciar-->
         <picture class="header__banner">
-            <source srcset="">
+            <source srcset="img/banner.jpg">
             <img src="" alt="">
         </picture>
+        <button class="--button">+34 666 666 666</button>
     </header>
     <main>
         <!--Quienes Somos-->
@@ -27,16 +28,28 @@
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sollicitudin et tellus.</p>
             <h4>1994</h4>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Faucibus sollicitudin et tellus.</p>
-            <section class="main__quienesSomos__img">
-
-            </section>
+            <picture class="main__quienesSomos__img">
+                <source srcset="img/quienesSomos.jpg">
+                <img src="" alt="">
+            </picture>
 
         </section>
         <!--Resumen de varios servicios-->
+        <h2>Servicios</h2>
         <section class="main__servicios">
-            <section class="main__servicios__servicio1"></section>
-            <section class="main__servicios__servicio2"></section>
-            <section class="main__servicios__servicio3"></section>
+            <picture class="main__servicios__servicio1">
+                <source srcset="img/servicios.jpg">
+                <img src="" alt="">
+            </picture>
+       
+            <picture class="main__servicios__servicio2">
+                <source srcset="img/servicios.jpg">
+                <img src="" alt="">
+            </picture>
+            <picture class="main__servicios__servicio3">
+                <source srcset="img/servicios.jpg">
+                <img src="" alt="">
+            </picture>
 
         </section>
         <!--Novedades-->
@@ -44,21 +57,28 @@
         <h2 class="main__form__title">¿Quieres recibir nuestras novedades?</h2>
         <form action="">
             <input type="text">
-            <input type="button" class="main__form__button">
+            
+            <button class="--button">REGISTRATE</button>
         </form>
         </section>
 
     </main>
     <footer>
         <!--Más información-->
+        <ul>
+            <li class="footer__contactar__title">Contactar</li>
+            <li class="footer__contactar">Dirección Plaza España, 34</li>
+            <li class="footer__contactar">Palma de Mallorca</li>
+            <li class="footer__contactar">info@srmuebles.com</li>
+        </ul>
         <!--Redes sociales-->
         <ul>
-            <li>Redes</li>
-            <li>Twitter</li>
-            <li>Pinterest</li>
-            <li>Instagram</li>
+            <li class="footer__redesSociales__title">Redes</li>
+            <li class="footer__redesSociales">Twitter</li>
+            <li class="footer__redesSociales">Pinterest</li>
+            <li class="footer__redesSociales">Instagram</li>
         </ul>
-        <h6>&copy;Copyright-2021-SrMueble</h6>
+        <h6 class="footer__copy">&copy;Copyright-2021-SrMueble</h6>
     </footer>
     </section>
 </body>

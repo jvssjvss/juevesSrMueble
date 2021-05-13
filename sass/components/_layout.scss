@@ -1,23 +1,35 @@
 /*Layout*/
-
+body{
+    font-size: $mainFont;
+    font: $fontType;
+}
 .container{
+    height: 420vh;
     display: grid;
     grid-column: 1fr;
-    grid-row: 1fr 1fr 1fr;
+    grid-row: 25.6% auto 18%;
     grid-area: "header"
     "main"
     "footer";
 }
+header,main, footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 header{
     grid-area: "header";
+    border-bottom: 0.5vh $cPink solid;
 
 }
 main{
     grid-area: "main";
-    padding-left: 0.44vw;
-    padding-right: 0.44vw;
+    padding-left: 16px;
+    padding-right: 16px;
 }
 footer{
     grid-area: "footer";
     background-color: $cBlack;
+
+
 }

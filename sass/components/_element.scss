@@ -1,1 +1,23 @@
 /*Element*/
+.header__title{
+    font-size: 2.25rem;
+}
+
+
+.--button{
+    min-height: 50px;
+    background-color: $cOrange;
+    font-weight: 700;
+    font-size: 1.125rem;
+
+}
+
+.footer__redesSociales__title, .footer__contactar__title{
+    color: $cWhite;
+    font-weight: bolder;
+
+}
+
+.footer__copy, .footer__contactar, .footer__redesSociales{
+    color: $cWhite;
+}
